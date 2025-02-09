@@ -1,0 +1,6 @@
+run = "uwu run"
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "uwu run"]
