@@ -1,6 +1,11 @@
-run = "uwu run"
+run = "python main.py"
+modules = ["python-3.11"]
 [nix]
 channel = "stable-24_05"
 
 [deployment]
 run = ["sh", "-c", "uwu run"]
+
+[[ports]]
+localPort = 8080
+externalPort = 80
