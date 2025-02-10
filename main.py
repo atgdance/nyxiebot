@@ -5,16 +5,13 @@ from discord.ext import commands, tasks
 import random
 from dataclasses import dataclass
 from dotenv import load_dotenv
-# from keep_alive import keep_alive
-# keep_alive()
 
-load_dotenv(dotenv_path=r"C:\Users\admin\Documents\Discord_bot\.env")
+
+load_dotenv()
 
 intents = discord.Intents.default()
 intents.message_content = True
 client = discord.Client(intents=intents)
-
-# message_counts = {}
 
 # DEFINING TIME PERIODS
 
@@ -22,7 +19,7 @@ Gen = 1202305993954828292
 
 MESSAGE_THRESHOLD = 150
 MAX_SESSION_TIME_SECONDS = 10
-TOKEN = os.getenv("TOKEN")
+TOKEN = "MTMzNzgwMjM4NDk0NDE0MDM4OA.GB7fm9.gGmAIvi-W6hxdfRJI0klRw1KQE4JMzsYy8SQQQ"
 if TOKEN is None:
     raise ValueError(
         "TOKEN environment variable not set. Check your .env file.")
